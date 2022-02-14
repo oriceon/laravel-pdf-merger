@@ -1,0 +1,38 @@
+{
+    "name": "oriceon/laravel-pdf-merger",
+    "description": "Laravel Pdf Merger",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "tcpdf",
+        "pdf",
+        "merger"
+    ],
+    "authors": [
+        {
+            "name": "Valentin Ivașcu"
+        }
+    ],
+    "require": {
+        "php": ">=7.3.0",
+        "illuminate/support": "^7.0|^8.0|^9.0",
+        "tecnickcom/tcpdf": "^6.4.4",
+        "setasign/fpdi": "^2.3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oriceon\\PdfMerger\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Oriceon\\PdfMerger\\PdfMergerServiceProvider"
+            ],
+            "aliases": {
+                "PdfMerger": "Oriceon\\PdfMerger\\Facades\\PdfMerger"
+            }
+        }
+    }
+}
